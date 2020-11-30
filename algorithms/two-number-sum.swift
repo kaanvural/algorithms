@@ -40,7 +40,7 @@ class twoNumberSum2 {
     for number in array {
         let potentialMatch = targetSum - number
         
-        if let exists = numversHashMap[potentialMatch], exists {
+        if let exists = numbersHashMap[potentialMatch], exists {
             return [potentialMatch, number]
         } else {
             numbersHashMap[number] = true
